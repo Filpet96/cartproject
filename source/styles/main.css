@@ -1,0 +1,40 @@
+.products {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  height: 250px;
+  margin: 20px;
+}
+.nike1 {
+  background-image: url('../images/nike1.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 230px;
+}
+.nike2 {
+  background-image: url('../images/nike2.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 230px;
+}
+.ralph {
+  background-image: url('../images/ralph.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 230px;
+}
+.vans{
+  background-image: url('../images/vans.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 230px;
+}

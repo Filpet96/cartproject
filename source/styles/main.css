@@ -2,38 +2,35 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 200px;
-  height: 250px;
+  width: 300px;
+  height: 465px;
   margin: 20px;
+  padding: 10px;
 }
 .img {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 180px;
-  height: 230px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  height: 50%;
 }
-.nike2 {
-  background-image: url('../images/nike2.jpg');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 180px;
-  height: 230px;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  padding-top: 20px;
 }
-.ralph {
-  background-image: url('../images/ralph.jpg');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 180px;
-  height: 230px;
-}
-.vans{
-  background-image: url('../images/vans.jpg');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 180px;
-  height: 230px;
+
+.AddCartButton {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border-style: none;
+  border-color: none;
+  background-color: black;
+  color: white;
 }

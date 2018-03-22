@@ -3,6 +3,19 @@
 // * Get objects
 // * Adding value to API
 //
+function guid() {
+  function s4() {
+    return Math.floor((1 + Math.random()) * 0x10000)
+      .toString(16)
+      .substring(1);
+  }
+  return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+}
+
+
+if (!localStorage.getItem('user')) {
+  localStorage.setItem('user', `user=${guid()}`);
+}
 
 fetch('http://localhost:5000/api/product', {
   method: 'GET', // or 'PUT'
@@ -15,7 +28,7 @@ fetch('http://localhost:5000/api/product', {
   for (const product of products){
 
     const  {id:productid, description:productdescription, name:productname, price:productprice, slug:productslug, productImage:productimage} = product
-    var productsList = document.querySelector('.productscontainer');
+    const productsList = document.querySelector('.productscontainer');
 
     productsList.innerHTML +=  `<div class="products">
     <img class="img" src="${productimage}" alt="">
@@ -26,12 +39,12 @@ fetch('http://localhost:5000/api/product', {
     </div>`
 
     const AddCartButtons = document.querySelectorAll('.AddCartButton');
-
     Array.from(AddCartButtons).forEach(AddCartButton => {
       AddCartButton.addEventListener('click', () => {
+        const cookie = localStorage.getItem(userid);
         const cart =
         {
-          "cartid": "32", //Le cookie
+          "cartid": guid(), //Le cookie
           "productid": AddCartButton.value
         }
         fetch('http://localhost:5000/api/cart', {
@@ -41,7 +54,8 @@ fetch('http://localhost:5000/api/product', {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
           })
-        }).then(res => res.json())
+        })
+        // .then(res => res.json())
         .then(response => console.log('Success:', response));
       })
     })

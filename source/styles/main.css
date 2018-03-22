@@ -6,8 +6,7 @@
   height: 250px;
   margin: 20px;
 }
-.nike1 {
-  background-image: url('../images/nike1.jpg');
+.img {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

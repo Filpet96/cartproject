@@ -12,9 +12,8 @@ function guid() {
   return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
 }
 
-
 if (!localStorage.getItem('user')) {
-  localStorage.setItem('user', `user=${guid()}`);
+  localStorage.setItem('user', `${guid()}`);
 }
 
 fetch('http://localhost:5000/api/product', {
@@ -36,15 +35,38 @@ fetch('http://localhost:5000/api/product', {
     <p>${productdescription}</p>
     <p>Price: ${productprice}$</p>
     <button class="AddCartButton" type="submit" value="${productid}" name="button">Add to cart!</button>
+    <button class="DeleteCartButton" type="submit" value="${productid}" name="button">Delete from cart!</button>
     </div>`
+
+    const DeleteCartButtons = document.querySelectorAll('.DeleteCartButton');
+    Array.from(DeleteCartButtons).forEach(DeleteCartButton => {
+      DeleteCartButton.addEventListener('click', () => {
+        const cookie = localStorage.getItem('user');
+        const cart =
+        {
+          "cartid": cookie, //Le cookie
+          "productid": DeleteCartButton.value
+        }
+        fetch('http://localhost:5000/api/cart', {
+          method: 'DELETE',
+          body: JSON.stringify(cart),
+          headers: new Headers({
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          })
+        })
+        .then(response => console.log('Succes:', response));
+        console.log(response);
+      })
+    })
 
     const AddCartButtons = document.querySelectorAll('.AddCartButton');
     Array.from(AddCartButtons).forEach(AddCartButton => {
       AddCartButton.addEventListener('click', () => {
-        const cookie = localStorage.getItem(userid);
+        const cookie = localStorage.getItem('user');
         const cart =
         {
-          "cartid": guid(), //Le cookie
+          "cartid": cookie, //Le cookie
           "productid": AddCartButton.value
         }
         fetch('http://localhost:5000/api/cart', {

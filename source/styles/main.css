@@ -34,3 +34,15 @@
   background-color: black;
   color: white;
 }
+.DeleteCartButton {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border-style: none;
+  border-color: none;
+  background-color: black;
+  color: white;
+}

@@ -1,8 +1,9 @@
 //
 // * Fetcing API from db
 // * Get objects
-// * Adding value to API
+// * Adding user input
 //
+
 function guid() {
   function s4() {
     return Math.floor((1 + Math.random()) * 0x10000)
@@ -25,7 +26,7 @@ fetch('http://localhost:5000/api/product', {
 }).then(res => res.json())
 .then(products => {
   for (const product of products){
-
+    console.log(product);
     const  {id:productid, description:productdescription, name:productname, price:productprice, slug:productslug, productImage:productimage} = product
     const productsList = document.querySelector('.productscontainer');
 
@@ -47,16 +48,14 @@ fetch('http://localhost:5000/api/product', {
           "cartid": cookie, //Le cookie
           "productid": DeleteCartButton.value
         }
-        fetch('http://localhost:5000/api/cart', {
+        fetch(`http://localhost:5000/api/cart/${cart.cartid}/${cart.productid}`, {
           method: 'DELETE',
-          body: JSON.stringify(cart),
           headers: new Headers({
             'Accept': 'application/json',
             'Content-Type': 'application/json'
           })
         })
-        .then(response => console.log('Succes:', response));
-        console.log(response);
+        .then(response => console.log('Succes:', response))
       })
     })
 

@@ -27,16 +27,16 @@ fetch('http://localhost:5000/api/product', {
 .then(products => {
   for (const product of products){
     console.log(product);
-    const  {id:productid, description:productdescription, name:productname, price:productprice, slug:productslug, productImage:productimage} = product
+    // const  {id:productid, description:productdescription, name:productname, price:productprice, slug:productslug, productImage:productimage} = product
     const productsList = document.querySelector('.productscontainer');
 
     productsList.innerHTML +=  `<div class="products">
-    <img class="img" src="${productimage}" alt="">
-    <p>${productname}</p>
-    <p>${productdescription}</p>
-    <p>Price: ${productprice}$</p>
-    <button class="AddCartButton" type="submit" value="${productid}" name="button">Add to cart!</button>
-    <button class="DeleteCartButton" type="submit" value="${productid}" name="button">Delete from cart!</button>
+    <img class="img" src="${product.productImage}" alt="">
+    <p>${product.name}</p>
+    <p>${product.description}</p>
+    <p>Price: ${product.price}$</p>
+    <button class="AddCartButton" type="submit" value="${product.id}" name="button">Add to cart!</button>
+    <button class="DeleteCartButton" type="submit" value="${product.id}" name="button">Delete from cart!</button>
     </div>`
 
     const DeleteCartButtons = document.querySelectorAll('.DeleteCartButton');

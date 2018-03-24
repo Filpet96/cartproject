@@ -17,8 +17,8 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.php">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./pages/products.php">Products</a>
@@ -29,7 +29,6 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Login</a>
-              <a class="dropdown-item" href="#">Go to Cart</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Register</a>
             </div>
@@ -37,7 +36,7 @@
         </ul>
       </div>
       <li class="nav-item d-flex flex-row-reverse mr-3 mb-0">
-        <a class="" href="#"><img src="/source/images/carticon.png" width="30" height="30" alt=""></a>
+        <a class="" href="../pages/userCart.php"><img src="/source/images/carticon.png" width="30" height="30" alt=""></a>
       </li>
     </nav>
     <div class="container">

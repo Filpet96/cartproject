@@ -36,7 +36,7 @@
         </ul>
       </div>
       <li class="nav-item d-flex flex-row-reverse mr-3 mb-0">
-        <a class="" href="../pages/userCart.php"><img src="/src/images/carticon.png" width="30" height="30" alt=""></a>
+        <a class="" href="userCart"><img src="/src/images/carticon.png" width="30" height="30" alt=""></a>
       </li>
     </nav>
     <div class="container">

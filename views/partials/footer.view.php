@@ -6,7 +6,7 @@
   <script src="/src/scripts/products.js" type="text/javascript">
   </script>
 <?php endif; ?>
-<?php if (stripos($_SERVER['REQUEST_URI'], 'index')): ?>
+<?php if (stripos($_SERVER['REQUEST_URI'], 'userCart')): ?>
   <script src="/src/scripts/userProducts.js" type="text/javascript">
   </script>
 <?php endif; ?>

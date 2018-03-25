@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/source/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/main.css">
     <title><?php echo $title; ?></title>
   </head>
   <body>
@@ -36,7 +36,7 @@
         </ul>
       </div>
       <li class="nav-item d-flex flex-row-reverse mr-3 mb-0">
-        <a class="" href="../pages/userCart.php"><img src="/source/images/carticon.png" width="30" height="30" alt=""></a>
+        <a class="" href="../pages/userCart.php"><img src="/src/images/carticon.png" width="30" height="30" alt=""></a>
       </li>
     </nav>
     <div class="container">

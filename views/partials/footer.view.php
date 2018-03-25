@@ -3,11 +3,11 @@
 </div>
 </div>
 <?php if (!stripos($_SERVER['REQUEST_URI'], 'usercart')): ?>
-  <script src="/source/scripts/products.js" type="text/javascript">
+  <script src="/src/scripts/products.js" type="text/javascript">
   </script>
 <?php endif; ?>
 <?php if (stripos($_SERVER['REQUEST_URI'], 'index')): ?>
-  <script src="/source/scripts/userProducts.js" type="text/javascript">
+  <script src="/src/scripts/userProducts.js" type="text/javascript">
   </script>
 <?php endif; ?>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

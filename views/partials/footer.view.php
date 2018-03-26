@@ -1,8 +1,11 @@
-<div class="footer">
-<h1>awesome</h1>
 </div>
+<div class="jumbotron jumbotron-fluid m-0 mt-5">
+  <div class="container">
+    <h1 class="display-4">Fluid jumbotron</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
 </div>
-<?php if (!stripos($_SERVER['REQUEST_URI'], 'usercart')): ?>
+<?php if (stripos($_SERVER['REQUEST_URI'], 'products')): ?>
   <script src="/src/scripts/products.js" type="text/javascript">
   </script>
 <?php endif; ?>

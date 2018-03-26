@@ -22,27 +22,22 @@
   padding-top: 20px;
 }
 
-.AddCartButton {
+
+
+/* CART */
+
+.products-cart {
   display: flex;
   justify-content: center;
   margin: auto;
-  width: 100px;
-  height: 30px;
-  border-radius: 5px;
-  border-style: none;
-  border-color: none;
-  background-color: black;
-  color: white;
+
 }
-.DeleteCartButton {
+
+.img-cart {
   display: flex;
   justify-content: center;
   margin: auto;
-  width: 100px;
-  height: 30px;
-  border-radius: 5px;
-  border-style: none;
-  border-color: none;
-  background-color: black;
-  color: white;
+  width: 50%;
+  height: 50%;
+  padding: 0px;
 }

@@ -30,34 +30,13 @@ fetch('http://localhost:5000/api/product', {
     // const  {id:productid, description:productdescription, name:productname, price:productprice, slug:productslug, productImage:productimage} = product
     const productsList = document.querySelector('.productscontainer');
 
-    productsList.innerHTML +=  `<div class="products">
+    productsList.innerHTML +=  `<div class="products ml-5 mr-5 p-0">
     <img class="img" src="${product.productImage}" alt="">
     <p>${product.name}</p>
     <p>${product.description}</p>
     <p>Price: ${product.price}$</p>
-    <button class="AddCartButton" type="submit" value="${product.id}" name="button">Add to cart!</button>
-    <button class="DeleteCartButton" type="submit" value="${product.id}" name="button">Delete from cart!</button>
+    <button class="AddCartButton btn btn-dark" type="button" value="${product.id}" name="button">Add to cart!</button>
     </div>`
-
-    const DeleteCartButtons = document.querySelectorAll('.DeleteCartButton');
-    Array.from(DeleteCartButtons).forEach(DeleteCartButton => {
-      DeleteCartButton.addEventListener('click', () => {
-        const cookie = localStorage.getItem('user');
-        const cart =
-        {
-          "cartid": cookie, //Le cookie
-          "productid": DeleteCartButton.value
-        }
-        fetch(`http://localhost:5000/api/cart/${cart.cartid}/${cart.productid}`, {
-          method: 'DELETE',
-          headers: new Headers({
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-          })
-        })
-        .then(response => console.log('Succes:', response))
-      })
-    })
 
     const AddCartButtons = document.querySelectorAll('.AddCartButton');
     Array.from(AddCartButtons).forEach(AddCartButton => {

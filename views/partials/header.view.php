@@ -10,7 +10,10 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white mt-3 ml-4 mr-4">
+      <li class="nav-item d-flex flex-row-reverse mb-0">
+        <a class="" href="/"><img src="/src/images/logo.png" width="30" height="30" alt=""></a>
+      </li>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,12 +33,12 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Login</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Register</a>
+              <a class="dropdown-item" href="userCart">Go to cart</a>
             </div>
           </li>
         </ul>
       </div>
-      <li class="nav-item d-flex flex-row-reverse mr-3 mb-0">
+      <li class="nav-item d-flex flex-row-reverse mb-0">
         <a class="" href="userCart"><img src="/src/images/carticon.png" width="30" height="30" alt=""></a>
       </li>
     </nav>

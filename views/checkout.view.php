@@ -41,12 +41,12 @@
   <h4 class="mt-3">Creditcard details</h4>
   <div class="form-row mt-3">
     <div class="form-group col-md-6">
-      <label for="inputCity">Card number</label>
-      <input type="text" class="form-control" id="inputCity" placeholder="XXXX-XXXX-XXXX-XXXX">
+      <label for="inputCity1">Card number</label>
+      <input type="text" class="form-control" id="inputCity1" placeholder="XXXX-XXXX-XXXX-XXXX">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputState">Card-Type</label>
-      <select id="inputState" class="form-control">
+      <label for="inputState1">Card-Type</label>
+      <select id="inputState1" class="form-control">
         <option selected>Choose...</option>
         <option>American Express</option>
         <option>MasterCard</option>
@@ -54,8 +54,8 @@
       </select>
     </div>
     <div class="form-group col-md-2">
-      <label for="inputZip">CVC2</label>
-      <input type="text" class="form-control" id="inputZip" placeholder="XXX">
+      <label for="inputZip1">CVC2</label>
+      <input type="text" class="form-control" id="inputZip1" placeholder="XXX">
     </div>
   </div>
   <button type="submit" class="btn btn-dark">Order now</button>

@@ -1,0 +1,17 @@
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/bin/Debug/netcoreapp2.0/WebApp.Project.Core.UnitTests.deps.json
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/bin/Debug/netcoreapp2.0/WebApp.Project.Core.UnitTests.runtimeconfig.json
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/bin/Debug/netcoreapp2.0/WebApp.Project.Core.UnitTests.runtimeconfig.dev.json
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/bin/Debug/netcoreapp2.0/WebApp.Project.Core.UnitTests.dll
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/bin/Debug/netcoreapp2.0/WebApp.Project.Core.UnitTests.pdb
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/bin/Debug/netcoreapp2.0/WebApp.Project.Core.dll
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/bin/Debug/netcoreapp2.0/WebApp.Project.Core.pdb
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/obj/Debug/netcoreapp2.0/WebApp.Project.Core.UnitTests.csprojResolveAssemblyReference.cache
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/obj/Debug/netcoreapp2.0/WebApp.Project.Core.UnitTests.csproj.CoreCompileInputs.cache
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/obj/Debug/netcoreapp2.0/WebApp.Project.Core.UnitTests.AssemblyInfoInputs.cache
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/obj/Debug/netcoreapp2.0/WebApp.Project.Core.UnitTests.AssemblyInfo.cs
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/obj/Debug/netcoreapp2.0/WebApp.Project.Core.UnitTests.dll
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/obj/Debug/netcoreapp2.0/WebApp.Project.Core.UnitTests.pdb
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/bin/Debug/netcoreapp2.0/NUnit3.TestAdapter.dll
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/bin/Debug/netcoreapp2.0/NUnit3.TestAdapter.pdb
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/bin/Debug/netcoreapp2.0/nunit.engine.netstandard.dll
+/Users/sebastianpalm/Documents/Skolarbete/2018/c#/CartProject/Test/WebApp.Project.Core.UnitTests/bin/Debug/netcoreapp2.0/Mono.Cecil.dll

@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using Test.Project.Core.Models;
 using Test.Project.Core.Repositories.Implementations;
+using WebApp.Project.Core.Repositories;
 
 namespace Test.Project.Core.Services.Implementations
 {
     public class ProductService
     {
-        private readonly ProductRepository productRepository;
+        private readonly IProductRepository productRepository;
 
-        public ProductService(ProductRepository productRepository)
+        public ProductService(IProductRepository productRepository)
         {
             this.productRepository = productRepository;
         }

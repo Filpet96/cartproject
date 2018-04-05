@@ -4,10 +4,11 @@ using Test.Project.Core.Models;
 using System.Linq;
 using MySql.Data.MySqlClient;
 using Dapper;
+using WebApp.Project.Core.Repositories;
 
 namespace Test.Project.Core.Repositories.Implementations
 {
-    public class ProductRepository
+    public class ProductRepository : IProductRepository
     {
         private readonly string connectionString;
         

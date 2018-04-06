@@ -44,18 +44,18 @@ namespace WebApp.Project.Api.Controllers
 
         // POST api/values
         [HttpPost]
-        public bool Post([FromBody]OrderModel orders)
+        public IActionResult Post([FromBody]OrderModel orders)
         {
-            return this.orderService.AddToOrder(orders);
+            var result = this.orderService.AddToOrder(orders);
 
-            //if (result)
-            //{
-            //    return this.StatusCode(201);
-            //}
-            //else
-            //{
-            //    return this.BadRequest();
-            //}
+            if (result)
+            {
+                return this.StatusCode(201);
+            }
+            else
+            {
+                return this.BadRequest();
+            }
         }
 
         //// PUT api/values/5

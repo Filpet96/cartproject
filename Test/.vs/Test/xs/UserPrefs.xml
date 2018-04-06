@@ -1,11 +1,20 @@
 ﻿<Properties StartupConfiguration="{12588E72-6625-458B-91D3-3AEAD3D4495F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp.Project.Core.UnitTests/Services/ProductServiceTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp.Project.Core/Repositories/Implementations/OrderRepository.cs">
     <Files>
-      <File FileName="WebApp.Project.Core.UnitTests/Services/ProductServiceTests.cs" Line="24" Column="10" />
-      <File FileName="WebApp.Project.Core/Repositories/IProductRepository.cs" Line="10" Column="9" />
-      <File FileName="WebApp.Project.Core/Repositories/Implementations/ProductRepositorie.cs" Line="12" Column="6" />
-      <File FileName="WebApp.Project.Core/Services/Implementations/ProductService.cs" Line="6" Column="1" />
+      <File FileName="WebApp.Project.Core/Services/Implementations/OrderService.cs" Line="23" Column="10" />
+      <File FileName="WebApp.Project.Api/Controllers/OrderController.cs" Line="50" Column="13" />
+      <File FileName="WebApp.Project.Core/Repositories/Implementations/OrderRepository.cs" Line="40" Column="54" />
+      <File FileName="WebApp.Project.Core/Models/OrderModel.cs" Line="8" Column="46" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Test" expanded="True">
+            <Node name="WebApp.Project.Core.UnitTests" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -9,6 +9,28 @@ namespace WebApp.Project.Core.Services.Implementations
 {
     public class OrderService
     {
+
+        private readonly OrderRepository orderRepository;
+
+        public OrderService(OrderRepository orderRepository)
+        {
+            this.orderRepository = orderRepository;
+        }
+
+        public List<OrderModel> GetAll()
+        {
+            return this.orderRepository.GetAll();
+        }
+
+
+        public bool AddToOrder(OrderModel orders)
+        {
+            //if (int.Equals(carts.ProductId) || int.IsNullOrEmpty(carts.CartId))
+            //{
+            //    return false;
+            //}
+            return this.orderRepository.AddToOrder(orders);
+        }
         
     }
 }

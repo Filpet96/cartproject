@@ -10,6 +10,7 @@ $router = new Router([
   'products' => __DIR__.'/controllers/products.php',
   'userCart' => __DIR__.'/controllers/userCart.php',
   'checkout' => __DIR__.'/controllers/checkout.php',
+  'order' => __DIR__.'/controllers/order.php',
 ]);
 
 

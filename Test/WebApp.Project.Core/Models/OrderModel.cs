@@ -5,6 +5,12 @@ namespace WebApp.Project.Core.Models
     {
         public int Id { get; set; }
 
+        public string UserId { get; set; }
+
+        public string FirstName { get; set; }
+
+		public string LastName { get; set; }
+
         public string Email { get; set; }
 
         public string Address { get; set; }
@@ -13,7 +19,7 @@ namespace WebApp.Project.Core.Models
 
         public int CreditCard { get; set; }
 
-        public int Cvc2 { get; set; }
+        public int Cvc { get; set; }
 
         
     }

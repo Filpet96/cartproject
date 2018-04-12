@@ -28,13 +28,12 @@ function test(input) {
             'Content-Type': 'application/json'
         })
     })
-    .then(response => response.json())
     .then((response) => {
-        console.log(response);
-        // if (response) {
-        //     localStorage.removeItem('user');
-        //     window.location.href = 'order';
-        // }
+        console.log(response)
+        if (response) {
+            localStorage.removeItem('user');
+            window.location.href = 'order';
+        }
     })
 
 }

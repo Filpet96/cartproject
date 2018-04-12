@@ -25,10 +25,17 @@ namespace WebApp.Project.Core.Services.Implementations
 
         public bool AddToOrder(OrderModel orders)
         {
-            //if (int.Equals(orders.c) || int.IsNullOrEmpty(orders.CartId))
-            //{
-            //    return false;
-            //}
+            if (string.IsNullOrWhiteSpace(orders.FirstName) ||
+                string.IsNullOrWhiteSpace(orders.LastName) ||
+                string.IsNullOrWhiteSpace(orders.Address) ||
+                string.IsNullOrWhiteSpace(orders.City) ||
+                orders.CreditCard <= 0 ||
+                orders.Cvc <= 0
+
+                )
+            {
+                return false;
+            }
             return this.orderRepository.AddToOrder(orders);
         }
         

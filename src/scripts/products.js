@@ -26,10 +26,7 @@ fetch('http://localhost:5000/api/product', {
 }).then(res => res.json())
 .then(products => {
   for (const product of products){
-    console.log(product);
-    // const  {id:productid, description:productdescription, name:productname, price:productprice, slug:productslug, productImage:productimage} = product
     const productsList = document.querySelector('.productscontainer');
-
     productsList.innerHTML +=  `<div class="products ml-5 mr-5 p-0">
     <img class="img" src="${product.productImage}" alt="">
     <p>${product.name}</p>
@@ -56,7 +53,7 @@ fetch('http://localhost:5000/api/product', {
           })
         })
         // .then(res => res.json())
-        .then(response => console.log('Success:', response));
+        // .then(response => console.log('Success:', response));
       })
     })
   }

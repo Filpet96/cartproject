@@ -10,7 +10,6 @@ button.addEventListener('click', () => {
     test(values);
 });
 function test(input) {
-    console.log(input);
     fetch(`http://localhost:5000/api/order`, {
         method: 'POST',
         body: JSON.stringify({
@@ -29,11 +28,9 @@ function test(input) {
         })
     })
     .then((response) => {
-        console.log(response)
         if (response) {
             localStorage.removeItem('user');
             window.location.href = 'order';
         }
-    })
-
+    })    
 }

@@ -1,4 +1,5 @@
 <?php require __DIR__.'/partials/header.view.php'; ?>
+<p class="Delete mt-5">Deleted from block!</p>
 <div class="col-md-12 mt-5 mb-5 pt-5 pb-5">
 
 

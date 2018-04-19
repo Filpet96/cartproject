@@ -72,3 +72,9 @@
     display: none;
     color: #48c446;
 }
+.Delete {
+    justify-content: center;
+    align-items: center;
+    display: none;
+    color: #c92c2c;
+}

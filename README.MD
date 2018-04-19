@@ -27,3 +27,8 @@
 ## License
 
 [MIT](LICENSE) ©
+
+## Testing
+
+* Gabriel Aanesen
+* Andreas Lundqvist
